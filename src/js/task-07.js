@@ -5,6 +5,6 @@ const refs = {
 
 refs.input.addEventListener("input", setInputValueToTextFontSize);
 
-function setInputValueToTextFontSize(event) {
-  refs.text.style.fontSize = `${event.currentTarget.value}px`;
+function setInputValueToTextFontSize(eve) {
+  refs.text.style.fontSize = `${eve.currentTarget.value}px`;
 }

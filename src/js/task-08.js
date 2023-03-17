@@ -1,6 +1,8 @@
 const loginForm = document.querySelector(".login-form");
 
-const handleFormSubmit = (event) => {
+loginForm.addEventListener("submit", handleFormSubmit);
+
+function handleFormSubmit(event) {
   event.preventDefault();
   let formFillResult = {};
   const {
@@ -14,8 +16,4 @@ const handleFormSubmit = (event) => {
 
   console.log(formFillResult);
   event.currentTarget.reset();
-};
-
-loginForm.addEventListener("submit", handleFormSubmit);
-
-// чи це треба було зробити через FormData.forEach???
+}
