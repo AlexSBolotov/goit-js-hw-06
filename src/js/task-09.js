@@ -5,8 +5,9 @@ const body = document.body;
 btnForChangeBgc.addEventListener("click", changeBgcBtnClick);
 
 function changeBgcBtnClick() {
-  colorCode.textContent = getRandomHexColor();
-  body.style.backgroundColor = getRandomHexColor();
+  const currentColor = getRandomHexColor();
+  colorCode.textContent = currentColor;
+  body.style.backgroundColor = currentColor;
 }
 
 function getRandomHexColor() {
